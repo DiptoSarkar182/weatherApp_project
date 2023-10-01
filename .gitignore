@@ -89,7 +89,8 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+api_key.txt
+note.txt 
 
 # Gatsby files
 .cache/
