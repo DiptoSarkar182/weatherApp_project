@@ -91,6 +91,9 @@ out
 .nuxt
 api_key.txt
 note.txt 
+test.js
+test.html
+style.css
 
 # Gatsby files
 .cache/

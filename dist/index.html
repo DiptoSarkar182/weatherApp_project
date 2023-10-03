@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Dipto Weather App</title>
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>Search your city for weather</h1>
     <form action="">
-        <label for="search">Search:</label>
-        <input type="text" id="searchArea" name="search">
+        <p>
+            <label for="search">
+                <span>Search city for weather update</span>
+                <input type="text" id="searchArea" name="search" required maxlength="50" 
+            pattern="[A-Za-z\s\-]+">
+            <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+
         <button class="searchBtn">Search</button>
     </form>
-    <div class="showData"></div>
+
+    <div class="showData">
+        <div class="cityCountryTime">
+            <p id="cityAndCountry"></p>
+            <p id="date"></p>
+            <p id="time"></p>
+            <p id="week"></p>
+        </div>
+    </div>
     
 </body>
 </html>
