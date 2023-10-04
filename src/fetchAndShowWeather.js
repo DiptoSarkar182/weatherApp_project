@@ -29,7 +29,7 @@ function initialize(){
 
     async function fetchAndShowWeatherData(getValue){
         searchError.textContent = '';
-        const api_key = `http://api.weatherapi.com/v1/current.json?key=b5e7182569e7426eb6e160345230310&q=${getValue}&aqi=yes`;
+        const api_key = `https://api.weatherapi.com/v1/current.json?key=b5e7182569e7426eb6e160345230310&q=${getValue}&aqi=yes`;
         try{
             const response = await fetch(api_key, {mode:'cors'})
             
