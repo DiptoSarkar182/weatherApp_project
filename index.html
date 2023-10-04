@@ -3,32 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dipto Weather App</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="">
-        <p>
-            <label for="search">
-                <span>Search city for weather update</span>
-                <input type="text" id="searchArea" name="search" required maxlength="50" 
-            pattern="[A-Za-z\s\-]+">
-            <span class="error" aria-live="polite"></span>
-            </label>
-        </p>
-
-        <button class="searchBtn">Search</button>
+    <form  action="" autocomplete="off">
+        <div class="header-container">
+            <div>
+                <label for="search">
+                    <input type="text" id="searchArea" name="search" required maxlength="50" 
+                    pattern="[A-Za-z\s\-]+" placeholder="Search city" 
+                    class="inputBox">
+                    <span class="error" aria-live="polite"></span>
+                </label>
+            </div>
+            <div>
+                <button class="searchBtn">Search</button>
+            </div>
+        </div>
     </form>
+    <div class="toggleBtn">
+        <button id="fahrenheit">&#xb0;F</button>
+        <button id="celsius">&#xb0;C</button>
+    </div>
 
     <div class="showData">
         <div class="cityCountryTime">
             <p id="cityAndCountry"></p>
-            <p id="date"></p>
+            <p id="dateWeek"></p>
             <p id="time"></p>
-            <p id="week"></p>
+        </div>
+        <div class="tempConditionWindHumidity">
+            <p id="temp"></p>
+            <p id="condition"></p>
+            <p id="wind"></p>
+            <p id="humidity"></p>
+        </div>
+        <div class="tempFeelsAndAirQuality">
+            <p id="tempFeels"></p>
+            <p id="airQuality"></p>
         </div>
     </div>
-    
+    <script src="main.js" ></script>
 </body>
 </html>
