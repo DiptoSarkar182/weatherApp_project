@@ -115,6 +115,7 @@ body{
     margin: 0 auto;
     margin-top: 300px;
     font-family: 'Gabarito', cursive;
+    backdrop-filter: blur(5px);
   }
   
   .cityCountryTime,
